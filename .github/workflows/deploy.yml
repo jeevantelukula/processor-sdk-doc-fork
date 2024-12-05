@@ -18,8 +18,7 @@ jobs:
 
     steps:
       - name: Update github page deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/upload-artifact@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           artifact_name: github-pages
-
