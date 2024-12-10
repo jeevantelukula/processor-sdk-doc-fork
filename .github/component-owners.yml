@@ -27,7 +27,6 @@ components:
 
   source/devices/AM335x/linux: &sitara_legacy_list
     - jeevantelukula
-    - jmenti
   source/devices/AM437x/linux: *sitara_legacy_list
   source/devices/AM65X/linux: *sitara_legacy_list
 

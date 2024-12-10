@@ -26,6 +26,6 @@ jobs:
         uses: dyladan/component-owners@main
         with:
           config-file: .github/component-owners.yml
-          repo-token: ${{ github.token }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           assign-owners: true
           request-owner-reviews: true
