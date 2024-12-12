@@ -1,0 +1,28 @@
+---
+    name: "deploy"
+
+    on:
+      workflow_run:
+        workflows:
+          - build
+        types:
+          - completed
+
+    jobs:
+      deploy:
+        name: Deploy
+        runs-on: ubuntu-latest
+        permissions:
+          pages: write
+          id-token: write
+
+        steps:
+          - name: Update github page deployment
+            uses: actions/deploy-pages@v4
+            with:
+                token: ${{ secrets.GITHUB_TOKEN }}
+                timeout: 600000
+                error_count: 10
+                reporting_interval: 5000
+                artifact_name: github-pages  # Make sure to refer to the same artifact name used in build.yml
+                preview: false
