@@ -84,4 +84,5 @@
           - name: Upload static files as single artifact
             uses: actions/upload-pages-artifact@v3
             with:
+              name: github-pages
               path: build
