@@ -20,7 +20,7 @@
           - name: Update github page deployment
             uses: actions/deploy-pages@v4
             with:
-                token: ${{ secrets.GITHUB_TOKEN }}
+                token: ${{ secrets.MY_GITHUB_TOKEN }}
                 timeout: 600000
                 error_count: 10
                 reporting_interval: 5000
