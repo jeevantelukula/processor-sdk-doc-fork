@@ -39,15 +39,14 @@ components:
 
   source/devices/AM64X/linux: *mpu_list
   source/devices/AM62X/linux:
+    - *mpu_list
     - DhruvaG2000
-    - *mpu_list
 
-  source/devices/AM62AX/linux:
-    - *mpu_list
+  source/devices/AM62AX/linux: *mpu_list
 
   source/devices/AM62PX/linux:
-    - AashvijShenai
     - *mpu_list
+    - AashvijShenai
 
   source/devices/AM62LX/linux:
     - *mpu_list
