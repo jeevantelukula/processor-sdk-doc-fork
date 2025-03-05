@@ -1,4 +1,9 @@
 ---
+lists:
+  sitara-mpu-linux-sdk: &mpu_list
+    - jeevantelukula
+    - jsuhaas22
+    - sadik-smd
 # Each component identified by its path prefix has a list of owners
 components:
 
@@ -18,8 +23,7 @@ components:
     - vishalmti
   source/devices/*/android: *android_list
 
-  source/system: &mpu_list
-    - texasinstruments/sitara-mpu-linux-sdk
+  source/system: *mpu_list
   source/buildroot: *mpu_list
   source/linux/Foundational_Components/Hypervisor: *mpu_list
   source/linux/Foundational_Components/Tools: *mpu_list
@@ -36,26 +40,26 @@ components:
   source/devices/AM64X/linux: *mpu_list
   source/devices/AM62X/linux:
     - DhruvaG2000
-    - texasinstruments/sitara-mpu-linux-sdk
+    - *mpu_list
 
   source/devices/AM62AX/linux:
-    - texasinstruments/sitara-mpu-linux-sdk
+    - *mpu_list
 
   source/devices/AM62PX/linux:
     - AashvijShenai
-    - texasinstruments/sitara-mpu-linux-sdk
+    - *mpu_list
 
   source/devices/AM62LX/linux:
-    - texasinstruments/sitara-mpu-linux-sdk
+    - *mpu_list
     - bryanbrattlof
     - r-vignesh
 
   source/linux/Overview:
-    - texasinstruments/sitara-mpu-linux-sdk
+    - *mpu_list
     - aniket-l
 
   source/linux/Release_Specific:
-    - texasinstruments/sitara-mpu-linux-sdk
+    - *mpu_list
     - aniket-l
     - praneethbajjuri
     - uditkumarti
