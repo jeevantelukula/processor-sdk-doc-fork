@@ -33,7 +33,7 @@ To run the demos on |__PART_FAMILY_NAME__| EVM you will require,
 
         a. Nominal Output Voltage: 5-20VDC
         b. Maximum Output Current: 5000 mA
-        c. Refer to |__PART_FAMILY_NAME__| EVM `User guide <https://www.ti.com/lit/pdf/spruj66>`_
+        c. Refer to `|__PART_FAMILY_NAME__| EVM User guide <https://www.ti.com/lit/pdf/spruj66>`_
            for more details.
 
 Connect the components to the EVM as shown in the image.
