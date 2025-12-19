@@ -66,6 +66,7 @@ What's new
   - TISCI: A53 hosts default priv_id value updated to 1 from 4 (to match all other SOCs)
   - How standby power mode works - :ref:`CPUIdle Documentation <cpuidle-guide>`
   - Out-of-Box TI Apps Launcher Application with Qt6 Framework - :ref:`TI Apps Launcher <TI-Apps-Launcher-User-Guide-label>`
+  - Support for multiple GUI frameworks (Flutter and Slint) - :ref:`GUI Frameworks <GUI_Frameworks_User_Guide>`
   - Snagfactory Support - :ref:`Snagfactory Tool <Flash-via-Fastboot>`
   - Support for M2 CC33xx cards on Debian - `How to Enable M.2-CC33x1 in Linux <https://software-dl.ti.com/processor-sdk-linux/esd/AM62PX/10_01_10_04_Debian/exports/docs/linux/How_to_Guides/Target/How_To_Enable_M2CC3301_in_linux.html>`__
 
